@@ -15,5 +15,3 @@ for (int i = 0; i <= num; i++) //цикл for
     Console.Write($"{Math.Pow(i, 2)}" + ", ");
 }
 Console.WriteLine("\b\b  ");
-
-//Console.WriteLine(String.Join(", ", Enumerable.Range(start: 1, count: num).Select(s => s * s))); //решение в одну строчку

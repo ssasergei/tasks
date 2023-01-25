@@ -5,7 +5,7 @@
 Console.WriteLine("Ввести четверть: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-
+//
 // if (num==1) Console.Write("X>0 &&Y>0");
 // else if (num==2) Console.Write("X<0 &&Y>0");
 // else if (num==3) Console.Write("X<0 &&Y<0");

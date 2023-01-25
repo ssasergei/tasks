@@ -5,9 +5,9 @@
 //sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}
 
 
-Console.Write("Ведите точку А: ");
+Console.Write("Введите точку А: ");
 string[] arr1 = Console.ReadLine().Split(','); //ввод через ,
-Console.Write("Ведите точку B: ");
+Console.Write("Введите точку B: ");
 string[] arr2 = Console.ReadLine().Split(',');
 int x1 = int.Parse(arr1[0]);
 int y1 = int.Parse(arr1[1]);
@@ -24,5 +24,3 @@ double razall = Math.Pow(razx, 2) + Math.Pow(razy, 2) + Math.Pow(razz, 2);
 double fin = Math.Sqrt(razall);
 
 Console.WriteLine("A (" + x1 + "," + y1 + "," + z1 + "); B (" + x2 + "," + y2 + "," + z2 +  ") -> " + Math.Round(fin,2));
-
-//Console.Write(Math.Pow(sumx, 2) + Math.Pow(sumy, 2) + Math.Pow(sumz, 2));

@@ -18,7 +18,7 @@ void CheckedNumber(string num)
    {
     Console.WriteLine(num + " -> не является палиндромом" );
    }
-
+   
 }
 
 if (num?.Length == 5)

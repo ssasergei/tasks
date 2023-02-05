@@ -18,21 +18,18 @@ void PrintArray(int[] array)
     Console.Write("\b\b ]");
 }
 
-int max = array[0];
-{
-    for (int i = 0; i < array.Length; i++)
-
-        if (array[i] >= max) max = array[i];
-
-}
-
 int min = array[0];
-{
-    for (int i = 0; i < array.Length; i++)
+int max = array[0];
+      
+    {
+        for (int i = 0; i < array.Length; i++)
 
-        if (array[i] <= min) min = array[i];
-
-}
+        {
+            if (array[i] > max) max = array[i];
+            if (array[i] < min) min = array[i];
+            //diff = max - min;
+        }
+    }
 
 int diff = 0;
 diff = max - min;

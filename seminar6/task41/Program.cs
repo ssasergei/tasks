@@ -7,8 +7,8 @@ Console.WriteLine("Ввидете колличество чисел M");
 int countNuber = Convert.ToInt32(Console.ReadLine());
 
 
-// voip InputNuber(int countNuber)
-// {
+void InputNuber(int countNuber)
+{
     int[] array = new int[countNuber];
     int count = 0;
     for (int i = 0; i < array.Length; i++)
@@ -21,6 +21,6 @@ int countNuber = Convert.ToInt32(Console.ReadLine());
         
     }
     Console.WriteLine($"Кол-во чисел больше 0 -> {count}");
-// }
+}
 
-// InputNuber(countNuber);
+InputNuber(countNuber);

@@ -12,10 +12,9 @@ int[,] array1 = new int[row, col];
 int[,] array2 = new int[row, col];
 FillArray(array1);
 FillArray(array2);
-Console.Write("Первая матрица:");
+Console.Write("Например, даны 2 матрицы:");
 PrintArray(array1);
-Console.WriteLine();
-Console.Write("Вторая матрица:");
+Console.WriteLine("");
 PrintArray(array2);
 Multiply(array1, array2);
 int[,] resultMatrix = Multiply(array1, array2);
@@ -30,7 +29,7 @@ void FillArray(int[,] arr)
 
         for (int j = 0; j < arr.GetLength(1); j++)
         {
-            arr[i, j] = random.Next(1, 11);
+            arr[i, j] = random.Next(1, 10);
         }
     }
 }
@@ -42,7 +41,7 @@ void PrintArray(int[,] arr)
         Console.WriteLine("");
         for (int j = 0; j < arr.GetLength(1); j++)
         {
-            Console.Write($"{arr[i, j],5}");
+            Console.Write($"{arr[i, j],4}");
         }
     }
 }
@@ -57,7 +56,6 @@ int[,] Multiply(int[,] arr1, int[,] arr2)
             for (int k = 0; k < arr1.GetLength(1); k++)
             {
                 result[i,j] += arr1[i, k] * arr2[k, j];
-                // Console.WriteLine($"{array1[i, k] * array2[k, j]} +");
             }
         } 
      } return result;

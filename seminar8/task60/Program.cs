@@ -9,9 +9,6 @@
 int[,,] array = new int[2, 2, 2];
 FillArray(array);
 PrintArray(array);
-// Console.WriteLine();
-// ModifyArray(array);
-// PrintArray(array);
 void FillArray(int[,,] arr)
 {
     Random random = new Random();    
@@ -21,8 +18,7 @@ void FillArray(int[,,] arr)
         {
             for (int k = 0; k < arr.GetLength(2); k++)
             {
-                arr[i, j, k] = random.Next(10, 100);
-                
+                arr[i, j, k] = random.Next(10, 100);                
             }
         }
     }

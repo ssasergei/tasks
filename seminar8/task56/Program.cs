@@ -13,7 +13,6 @@ int[,] array = new int[row, col];
 FillArray(array);
 PrintArray(array);
 Console.WriteLine();
-// SumRow(array);
 void FillArray(int[,] arr)
 {
     Random random = new Random();
@@ -51,25 +50,14 @@ int SumRow(int[,] arr)
         }
         sumRows[i, 0] = i;
         sumRows[i, 1] = sum;
-     } 
-   //Console.Write($"сумма {sum}");
-        
+     }          
     int minSum = 0;
     for (int i = 0; i < sumRows.GetLength(0); i++)
     {
         if (sumRows[i, 1] < sumRows[minSum, 1]) minSum = i;
-        //Console.Write($"суmma {minSum} ");
     }
     
     return minSum;
-
-
-    //PrintArray(sumRows);
-
-    // Console.Write("\b ");
-     //Console.WriteLine("");
-
-
 }
 
 Console.WriteLine($"Номер строки с наименьшей суммой элементов: {SumRow(array)+1} строка ");

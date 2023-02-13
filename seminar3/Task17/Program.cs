@@ -26,38 +26,38 @@
 
 //Работа с кейсами
 
-Console.Write("Ведите число: " );
-int num = int.Parse(Console.ReadLine());
+// Console.Write("Ведите число: " );
+// int num = int.Parse(Console.ReadLine());
 
-switch (num)
-{
-    case 1:
-    {
-        Console.WriteLine("один");
-        break;
-    }
+// switch (num)
+// {
+//     case 1:
+//     {
+//         Console.WriteLine("один");
+//         break;
+//     }
 
-    case 2:
-    {
-        Console.WriteLine("два");
-        break;
-    }
+//     case 2:
+//     {
+//         Console.WriteLine("два");
+//         break;
+//     }
 
-    case 3:
-    {
-        Console.WriteLine("три");
-        break;
-    }
+//     case 3:
+//     {
+//         Console.WriteLine("три");
+//         break;
+//     }
     
-    default:
-    {
-        Console.WriteLine("Нет данных");
-        break;
-    }
-}
+//     default:
+//     {
+//         Console.WriteLine("Нет данных");
+//         break;
+//     }
+// }
 
 
-Console.Write("Ведите число: " );
+// Console.Write("Ведите число: " );
 //double num = double.Parse(Console.ReadLine());
 
 // Console.WriteLine(Math.Pow(num,3)); //степнь

@@ -43,12 +43,13 @@ void AverageArr(int[,] arr)
     {
         for (int j = 0; j < arr.GetLength(0); j++)
         {
-            sum = sum + arr[j,i];
-            Average= sum/arr.GetLength(0);
-            
+            sum = sum + arr[j, i];
+            Average = sum / arr.GetLength(0);
+
 
         }
-        
-        Console.Write($"{Math.Round(Average,2),1}; ");       
+
+        Console.Write($"{Math.Round(Average, 2),1}; ");
     }
-}Console.Write("\b\b  ");
+}
+Console.Write("\b\b  ");
